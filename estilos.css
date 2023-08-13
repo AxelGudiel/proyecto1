@@ -45,26 +45,62 @@
         }
 .section{
     background: #000;
+    display: flex;
 }
     .articulos{
         background: #900C3F;
+        flex:2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+
     }
     .article{
         background: #C70039;
+        flex:1 1 40%;
+
     }
     .navegacion{
         background: #F94C10;
+        flex:1 1 100%;
     }
 
     .aside{
         background: #001C30;
+        flex:1 1 auto;
     }
     .publicidad{
         background: #176B87;
     }
 .footer{
     background: #000;
+    display: flex;
+    justify-content: center;
 }
     .pie{
         background: #64CCC5;
+        width: 300px;
     }
+@media all and (max-width: 800px){
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media all and (max-width: 600px){
+    .articulos{
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 400px){
+    .aside{
+        flex-direction: column;
+    }
+}
