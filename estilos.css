@@ -5,22 +5,37 @@
 }
 
 .padre{
+    display: flex;
+    flex-flow: column nowrap;
 
 }
 .header{
     background: #000;
+    display: flex;
+    flex-flow: column nowrap;
+
 }
     .menu{
         background: #1D5B79;
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100px;
+        align-items: center;
     }
         .logo{
             background: #468B97;
+            flex:1 1 auto;
+            height: 30px;
         }
         .nav{
             background: #468B97;
+            flex:5 1 auto;
+            height: 30px;
         }
         .social{
             background: #468B97;
+            flex:1 1 auto;
+            height: 30px;
         }
     .texto-principal{
         background: #EF6262;
